@@ -1,5 +1,6 @@
-package com.org_connect.filter;
+package com.orgconnect.filter;
 
+import com.orgconnect.constants.Constants;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Component;
@@ -15,8 +16,8 @@ public class OrgContextFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
-        String orgGroup = httpServletRequest.getHeader("X-ORG-GROUP");
-        String role = httpServletRequest.getHeader("X-ROLE");
+        String orgGroup = httpServletRequest.getHeader(Constants.ORG_GROUP);
+        String role = httpServletRequest.getHeader(Constants.ROLE);
 
         if(StringUtils.hasText(orgGroup) && StringUtils.hasText(role)){
             OrgContext.setOrg(orgGroup);

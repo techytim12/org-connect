@@ -1,4 +1,4 @@
-package com.org_connect.enums;
+package com.orgconnect.constants;
 
 public enum Role {
 

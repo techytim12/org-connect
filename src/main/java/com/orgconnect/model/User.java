@@ -1,6 +1,6 @@
-package com.org_connect.model;
+package com.orgconnect.model;
 
-import com.org_connect.enums.Role;
+import com.orgconnect.constants.Role;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;

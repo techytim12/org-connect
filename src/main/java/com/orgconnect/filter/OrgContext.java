@@ -1,4 +1,4 @@
-package com.org_connect.filter;
+package com.orgconnect.filter;
 
 public class OrgContext {
 
