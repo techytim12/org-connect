@@ -1,4 +1,4 @@
-package com.org_connect.model;
+package com.orgconnect.model;
 
 import jakarta.persistence.*;
 import org.springframework.data.annotation.CreatedDate;
